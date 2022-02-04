@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+    
+    <div class="main">
+        <fieldset id="todo">
+        <legend><h1>To-do List</h1></legend>
+        <button onClick="removeItems()" class="btn">Clear All</button>
+        <input type="text" placeholder="Enter items..." id="input">
+        <button onClick="addItems()" class="btn">Add</button>
+    </fieldset>
+
+    
+        <ul id="items">
+            <li class="list" onClick="checkList(this)">
+                Make your list!
+            </li>
+        </ul>
+    
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
